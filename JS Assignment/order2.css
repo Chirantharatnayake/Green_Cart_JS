@@ -194,7 +194,7 @@ h2 {
 }
 
 .order-button {
-    background-color: #4CAF50;
+    background-color: #2C632C;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -207,7 +207,7 @@ h2 {
 }
 
 .order-button:hover {
-    background-color: #45a049;
+    background-color: #243725;
 }
 
 /* Footer styles */
@@ -328,7 +328,7 @@ h2 {
 }
 
 #orderTable th {
-    background-color: #4CAF50;
+    background-color: #2C632C;
     color: white;
 }
 
