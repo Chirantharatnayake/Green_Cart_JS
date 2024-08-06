@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Order Page</title>
+    <link rel="stylesheet" href="order2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="wrapper">
+            <nav class="navbar">
+                <div class="logo-container">
+                    <img src="./images/logo img.png" alt="logo" width="60px" id="logo2">
+                    <button class="menu-toggle" id="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a class="active" href="../index.html">Home</a></li>
+                    <li><a href="../aboutus.html">About Us</a></li>
+                    <li><a href="../productpage0.html">Our Products</a></li>
+                    <li><a href="./order2.html">Order Page</a></li>
+                    <li><a href="../loyalty.html">Loyalty Registration</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container main-background">
+        <div class="main-content">
+            <h1>Grocery Order Page</h1>
+            <form id="orderForm">
+                <div class="section">
+                    <h2>Fruits</h2>
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <img src="./images/apple_img-removebg-preview.png" alt="Apple" class="product-image">
+                            <div class="product-info">
+                                <label for="apple">Apple (per kg):</label>
+                                <input type="number" id="apple" name="apple" min="0" step="0.1">
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="./images/banana_img-removebg-preview.png" alt="Banana" class="product-image">
+                            <div class="product-info">
+                                <label for="banana">Banana (per kg):</label>
+                                <input type="number" id="banana" name="banana" min="0" step="0.1">
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="./images/papaya_img-removebg-preview.png" alt="Papaya" class="product-image">
+                            <div class="product-info">
+                                <label for="papaya">Papaya (per kg):</label>
+                                <input type="number" id="papaya" name="papaya" min="0" step="0.1">
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="./images/mango_img.png" alt="Mango" class="product-image">
+                            <div class="product-info">
+                                <label for="mango">Mango (per kg):</label>
+                                <input type="number" id="mango" name="mango" min="0" step="0.1">
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="./images/grapes_img.png" alt="Grapes" class="product-image">
+                            <div class="product-info">
+                                <label for="grapes">Grapes (per kg):</label>
+                                <input type="number" id="grapes" name="grapes" min="0" step="0.1">
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="./images/orange_img.png" alt="Oranges" class="product-image">
+                            <div class="product-info">
+                                <label for="oranges">Oranges (per kg):</label>
+                                <input type="number" id="oranges" name="oranges" min="0" step="0.1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2>Vegetables</h2>
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <img src="./images/carrot_img.png" alt="Carrot" class="product-image">
+                            <div class="product-info">
+                                <label for="carrot">Carrot (per kg):</label>
+                                <input type="number" id="carrot" name="carrot" min="0" step="0.1">
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="./images/potato_img.png" alt="Potato" class="product-image">
+                            <div class="product-info">
+                                <label for="potato">Potato (per kg):</label>
+                                <input type="number" id="potato" name="potato" min="0" step="0.1">
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="./images/pumpkin_img.png" alt="Pumpkin" class="product-image">
+                            <div class="product-info">
+                                <label for="pumpkin">Pumpkin (per kg):</label>
+                                <input type="number" id="pumpkin" name="pumpkin" min="0" step="0.1">
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="./images/BitterGourd_img.png" alt="Bitter Gourd" class="product-image">
+                            <div class="product-info">
+                                <label for="bitter_gourd">Bitter Gourd (per kg):</label>
+                                <input type="number" id="bitter_gourd" name="bitter_gourd" min="0" step="0.1">
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="./images/Beans_img.png" alt="Beans" class="product-image">
+                            <div class="product-info">
+                                <label for="beans">Beans (per kg):</label>
+                                <input type="number" id="beans" name="beans" min="0" step="0.1">
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="./images/eggplant_img.png" alt="Egg Plant" class="product-image">
+                            <div class="product-info">
+                                <label for="egg_plant">Egg Plant (per kg):</label>
+                                <input type="number" id="egg_plant" name="egg_plant" min="0" step="0.1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2>Dairy Produce</h2>
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <img src="./images/FreshMilk_img.png" alt="Milk" class="product-image">
+                            <div class="product-info">
+                                <label for="milk">Milk (quantity):</label>
+                                <input type="number" id="milk" name="milk" min="0" step="1">
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="./images/cheese_img.png" alt="Cheese" class="product-image">
+                            <div class="product-info">
+                                <label for="cheese">Cheese (quantity):</label>
+                                <input type="number" id="cheese" name="cheese" min="0" step="1">
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="./images/MilkMaid_img.png" alt="Milk Maid" class="product-image">
+                            <div class="product-info">
+                                <label for="milk_maid">Milk Maid (quantity):</label>
+                                <input type="number" id="milk_maid" name="milk_maid" min="0" step="1">
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="./images/icecream_img.png" alt="Ice Cream" class="product-image">
+                            <div class="product-info">
+                                <label for="ice_cream">Ice Cream (quantity):</label>
+                                <input type="number" id="ice_cream" name="ice_cream" min="0" step="1">
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="./images/Yoghurt_img.png" alt="Yoghurt" class="product-image">
+                            <div class="product-info">
+                                <label for="yoghurt">Yoghurt (quantity):</label>
+                                <input type="number" id="yoghurt" name="yoghurt" min="0" step="1">
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="./images/MilkPowder_img.png" alt="Milk Powder" class="product-image">
+                            <div class="product-info">
+                                <label for="milk_powder">Milk Powder (quantity):</label>
+                                <input type="number" id="milk_powder" name="milk_powder" min="0" step="1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2>Meat and Seafood</h2>
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <img src="./images/chicken_img.png" alt="Chicken" class="product-image">
+                            <div class="product-info">
+                                <label for="chicken">Chicken (quantity):</label>
+                                <input type="number" id="chicken" name="chicken" min="0" step="1">
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="./images/fish_img.png" alt="Fish" class="product-image">
+                            <div class="product-info">
+                                <label for="fish">Fish (quantity):</label>
+                                <input type="number" id="fish" name="fish" min="0" step="1">
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="./images/cuttlefish_img.png" alt="Cuttle Fish" class="product-image">
+                            <div class="product-info">
+                                <label for="cuttle_fish">Cuttle Fish (quantity):</label>
+                                <input type="number" id="cuttle_fish" name="cuttle_fish" min="0" step="1">
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="./images/lamb_img.png" alt="Lamb" class="product-image">
+                            <div class="product-info">
+                                <label for="lamb">Lamb (quantity):</label>
+                                <input type="number" id="lamb" name="lamb" min="0" step="1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2>Baking and Cooking Ingredients</h2>
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <img src="./images/Bread_img.png" alt="Bread" class="product-image">
+                            <div class="product-info">
+                                <label for="bread">Bread (quantity):</label>
+                                <input type="number" id="bread" name="bread" min="0" step="1">
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="./images/Cake_img.png" alt="Cake" class="product-image">
+                            <div class="product-info">
+                                <label for="cake">Cake (quantity):</label>
+                                <input type="number" id="cake" name="cake" min="0" step="1">
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="./images/Buns_img.png" alt="Buns" class="product-image">
+                            <div class="product-info">
+                                <label for="buns">Buns (quantity):</label>
+                                <input type="number" id="buns" name="buns" min="0" step="1">
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="./images/oil_img.png" alt="Coconut Oil" class="product-image">
+                            <div class="product-info">
+                                <label for="coconut_oil">Coconut Oil (quantity):</label>
+                                <input type="number" id="coconut_oil" name="coconut_oil" min="0" step="1">
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="./images/Flour_img.png" alt="Flour" class="product-image">
+                            <div class="product-info">
+                                <label for="flour">Flour (quantity):</label>
+                                <input type="number" id="flour" name="flour" min="0" step="1">
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="./images/sugar_img.png" alt="Sugar" class="product-image">
+                            <div class="product-info">
+                                <label for="sugar">Sugar (quantity):</label>
+                                <input type="number" id="sugar" name="sugar" min="0" step="1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Current Order Table -->
+                <div class="section">
+                    <h2>Current Order</h2>
+                    <table id="orderTable">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Order items will be added here dynamically -->
+                        </tbody>
+                        <tfoot>
+                            <tr id="totalRow" style="display: none;">
+                                <td colspan="2"><strong>Total</strong></td>
+                                <td id="totalPrice">0</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <div class="button-section">
+                    <button type="button" class="order-button" id="saveFavourites">Add to Favourites</button>
+                    <button type="button" class="order-button" id="applyFavourites">Apply Favourites</button>
+                    <input type="hidden" id="totalPriceInput" name="totalPrice">
+                    <a href="./payment.html" class="order-button" id="placeOrderButton">Place Order</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul class="ul">
+                        <li><a href="./aboutus.html">about us</a></li>
+                        <li><a href="./productpage0.html">our products</a></li>
+                        <li><a href="./orderpage.html">order page</a></li>
+                        <li><a href="./loyalty.html">loyalty registration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul class="ul">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul class="ul">
+                        <li><a href="./vege.html">Vegetables</a></li>
+                        <li><a href="./productpage.html">Dairy Products</a></li>
+                        <li><a href="./cosmetics.html">Cosmetics & Skincare Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://lk.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>

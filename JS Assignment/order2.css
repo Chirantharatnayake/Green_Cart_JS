@@ -1,0 +1,358 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    background-image: url(./images/background\ img.JPG); /* Add your background image path here */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar styles */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#logo2 {
+    width: 100px;
+    height: 75px;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: flex;
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    line-height: 80px;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 6px 13px;
+    text-decoration: none;
+    transition: .4s;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+    background: rgb(71, 189, 3);
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 767px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        top: 80px;
+        left: 0;
+    }
+    
+    .navbar ul.show {
+        display: flex;
+    }
+    
+    .navbar ul li {
+        text-align: center;
+        margin: 0;
+    }
+    
+    .navbar ul li a {
+        display: block;
+        padding: 15px;
+        line-height: 1.5;
+    }
+}
+
+
+
+/* Main content styles */
+.main-background {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.main-content {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-info label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.product-info input {
+    width: 100px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.order-button {
+    background-color: #2C632C;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+.order-button:hover {
+    background-color: #243725;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #24262b;
+    padding: 70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-col {
+    flex: 1;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    background-color: rgb(71, 189, 3);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+@media (max-width: 767px) {
+    .footer-col {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* Table styles */
+#orderTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#orderTable th, #orderTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#orderTable th {
+    background-color: #2C632C;
+    color: white;
+}
+
+#orderTable tfoot td {
+    font-weight: bold;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-info input {
+        width: 100%;
+    }
+}
